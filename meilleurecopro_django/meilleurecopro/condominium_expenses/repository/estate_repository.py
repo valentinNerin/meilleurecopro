@@ -11,3 +11,6 @@ class EstateRepository:
 
     def get_estates_by_zip_code(self, location: str) -> list[Estate]:
         return Estate.objects.filter(zip_code=location)
+    
+    def add_estate(self, estate: Estate) -> None:
+        Estate.save(estate)

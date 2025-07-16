@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ajouter propriété</title>
+    </head>
+    <body>
+        <h1>Saisissez l'url de la propriété'</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Envoyer</button>
+        </form>
+    </body>
+</html>
