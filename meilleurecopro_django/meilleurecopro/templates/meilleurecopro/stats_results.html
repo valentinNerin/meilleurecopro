@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Résultats</title>
+    </head>
+    <body>
+        {% if location %}
+        <div>
+            <span>Résultats pour la localisation : {{ location }}</span>
+        </div>
+        {% endif %}
+
+        {% if stats %}
+        <div>
+            <p>Moyenne des charges de copropriété : {{ stats.mean }}</p>
+            <p>Quantile 10% des charges de copropriété : {{ stats.quantile_10 }}</p>
+            <p>Quantile 90% des charges de copropriété : {{ stats.quantile_90 }}</p>
+        </div>
+        {% endif %}
+    </body>
+</html>
+

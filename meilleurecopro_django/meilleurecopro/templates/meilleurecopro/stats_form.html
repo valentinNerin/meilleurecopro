@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Recherche charges de copropriétés</title>
+    </head>
+    <body>
+        <h1>Saisissez la localisation et le type</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Envoyer</button>
+        </form>
+    </body>
+</html>
